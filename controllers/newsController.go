@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/news-api/services"
+	"github.com/samirkoirala/news-api/services"
 )
 
 func GetAllNews(c *gin.Context) {

@@ -1,7 +1,7 @@
 package services
 
 import (
-	"github.com/yourusername/news-api/config"
+	"github.com/samirkoirala/news-api/config"
 )
 
 func FetchAllNews() ([]config.News, error) {
