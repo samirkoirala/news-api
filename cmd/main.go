@@ -6,8 +6,8 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/news-api/config"
-	"github.com/yourusername/news-api/routes"
+	"github.com/samirkoirala/news-api/config"
+	"github.com/samirkoirala/news-api/routes"
 )
 
 func main() {
