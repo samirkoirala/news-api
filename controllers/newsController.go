@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/samirkoirala/news-api/config"
 	"github.com/samirkoirala/news-api/services"
 )
 
@@ -23,7 +24,7 @@ func CreateNews(c *gin.Context) {
 		return
 	}
 
-	createdNews, err := services.CreateNews(news)
+	createdNews, err := services.CreateNews(config.News(news))
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"message": "Failed to create news"})
 		return
