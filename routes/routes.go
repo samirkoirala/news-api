@@ -7,5 +7,5 @@ import (
 
 func SetupRoutes(r *gin.Engine) {
 	r.GET("/news", controllers.GetAllNews)
-	r.POST("/news", controllers.CreateNews)
+	r.POST("/newsadd", controllers.CreateNews)
 }
